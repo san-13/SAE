@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SAE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cryptech">Cryptech</string>
+    <string name="events">Events</string>
+    <string name="webinars">Webinars</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="office_bearers">Office Bearers</string>
+    <string name="about_us">About us</string>
+    <string name="about_us_brief">Donec nec volutpat nulla. Morbi ultrices eget lectus ac auctor. Curabitur sapien ex, sagittis ut sem vitae, imperdiet volutpat augue. In purus est, cursus molestie eros quis, sollicitudin pellentesque ex. Aenean semper ante eget malesuada posuere. Suspendisse congue eleifend tristique. Duis efficitur ultricies pellentesque. Cras sed erat ut enim efficitur semper. Maecenas placerat, ante in viverra hendrerit, eros enim scelerisque libero, aliquam viverra nunc sapien at ipsum. Nam tristique nunc tortor, in pulvinar velit viverra at. Maecenas rutrum dapibus sapien sit amet placerat. Vestibulum maximus odio eu dignissim fringilla.</string>
+
+</resources>

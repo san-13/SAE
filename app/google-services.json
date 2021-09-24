@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "124453995409",
+    "project_id": "sae-app-e8674",
+    "storage_bucket": "sae-app-e8674.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124453995409:android:b63b252331749195cd1030",
+        "android_client_info": {
+          "package_name": "com.sv.sae"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124453995409-1praqmo9lanhi6mvrdhqke5lnd01c5l0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-PyJNs5fLw2C4m_Lk27uvbz-J7dVSQLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124453995409-1praqmo9lanhi6mvrdhqke5lnd01c5l0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

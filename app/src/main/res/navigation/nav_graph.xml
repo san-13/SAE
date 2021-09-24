@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.sv.sae.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_info_btm_sheet"
+            app:destination="@id/info_btm_sheet" />
+        <action
+            android:id="@+id/action_home2_to_events_btm_sheet"
+            app:destination="@id/events_btm_sheet" />
+    </fragment>
+    <dialog
+        android:id="@+id/info_btm_sheet"
+        android:name="com.sv.sae.info_btm_sheet"
+        android:label="info_btm_sheet" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="alpha" />
+        <argument
+            android:name="description"
+            app:argType="string"
+            android:defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis ex non purus placerat egestas quis non orci. Cras luctus sodales augue ut pharetra. Nunc molestie ex eu odio ornare dictum. Nullam hendrerit suscipit dapibus. Vivamus maximus in odio at imperdiet. Quisque feugiat lacus euismod, vulputate augue eget, aliquam tellus.  " />
+        <argument
+            android:name="ytlink"
+            app:argType="string"
+            android:defaultValue="https://www.youtube.com/channel/UC9H4onmkThYbMHrce2PceQg/featured" />
+    </dialog>
+    <dialog
+        android:id="@+id/events_btm_sheet"
+        android:name="com.sv.sae.model.events_btm_sheet"
+        android:label="events_btm_sheet" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="alpha" />
+        <argument
+            android:name="desc"
+            app:argType="string"
+            android:defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis ex non purus placerat egestas quis non orci. Cras luctus sodales augue ut pharetra. Nunc molestie ex eu odio ornare dictum. Nullam hendrerit suscipit dapibus. Vivamus maximus in odio at imperdiet. Quisque feugiat lacus euismod, vulputate augue eget, aliquam tellus.  " />
+    </dialog>
+    <fragment
+        android:id="@+id/team2"
+        android:name="com.sv.sae.Team"
+        android:label="fragment_team"
+        tools:layout="@layout/fragment_team" />
+    <fragment
+        android:id="@+id/aboutUs2"
+        android:name="com.sv.sae.AboutUs"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+</navigation>

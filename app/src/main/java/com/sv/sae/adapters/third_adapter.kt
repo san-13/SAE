@@ -29,7 +29,7 @@ class third_adapter ( val thirds: ArrayList<teamModel>
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         val third = thirds[position]
-        Picasso.get().load(third.imageUrl).into(holder.image)
+        Picasso.get().load(third.imageUrl).placeholder(R.drawable.loading_31).into(holder.image)
         holder.image.setOnClickListener{
             val intent= Intent(Intent.ACTION_VIEW, Uri.parse(third.linkedin))
             holder.image.context.startActivity(intent)

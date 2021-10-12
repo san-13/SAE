@@ -34,7 +34,7 @@ class h_events_adapter(
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         val event = events[position]
-        Picasso.get().load(event.imageUrl).into(holder.image)
+        Picasso.get().load(event.imageUrl).placeholder(R.drawable.loading_31).into(holder.image)
         val action = HomeDirections.actionHome2ToEventsBtmSheet(name = event.name.toString())
         holder.image.setOnClickListener{
             holder.itemView.findNavController().navigate(action)

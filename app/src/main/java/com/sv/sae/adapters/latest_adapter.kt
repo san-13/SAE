@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.ProgressBar
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
@@ -30,11 +31,10 @@ class latest_adapter(
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         val latest = latests[position]
-        Picasso.get().load(latest.imageUrl).into(holder.image)
+        Picasso.get().load(latest.imageUrl).placeholder(R.drawable.loading_31).into(holder.image)
         holder.image.setOnClickListener{
             val action= HomeDirections.actionHome2ToEventsBtmSheet(name = latest.name.toString())
             holder.itemView.findNavController().navigate(action)
-
         }
     }
 

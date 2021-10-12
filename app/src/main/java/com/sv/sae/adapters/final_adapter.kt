@@ -1,5 +1,7 @@
 package com.sv.sae.adapters
 
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,6 +30,10 @@ class final_adapter ( val finals: ArrayList<teamModel>
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         val final = finals[position]
         Picasso.get().load(final.imageUrl).into(holder.image)
+        holder.image.setOnClickListener{
+            val intent= Intent(Intent.ACTION_VIEW, Uri.parse(final.linkedin))
+            holder.image.context.startActivity(intent)
+        }
 
     }
 

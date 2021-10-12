@@ -52,6 +52,7 @@ class LogedinActivity : AppCompatActivity() {
                 R.id.home2 -> replaceFragment(Home(),it.title.toString())
                 R.id.team2 -> replaceFragment(Team(),it.title.toString())
                 R.id.aboutUs -> replaceFragment(AboutUs(),it.title.toString())
+                R.id.contactUs->replaceFragment(ContactUs(),it.title.toString())
                 R.id.SignOut -> signout()
 
 

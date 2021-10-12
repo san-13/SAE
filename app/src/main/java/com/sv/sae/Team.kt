@@ -20,7 +20,7 @@ class Team : Fragment() {
     private var _binding: FragmentTeamBinding?=null
     private val binding get()=_binding!!
     private lateinit var dref : DatabaseReference
-    private lateinit var olist: ArrayList<teamModel>
+    private lateinit var olist:ArrayList<teamModel>
     private lateinit var fList:ArrayList<teamModel>
     private lateinit var tList:ArrayList<teamModel>
     private lateinit var slist:ArrayList<teamModel>
@@ -46,7 +46,7 @@ class Team : Fragment() {
         binding.officeRecycler.layoutManager=
             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL,false)
         olist = arrayListOf<teamModel>()
-        dref= FirebaseDatabase.getInstance().getReference("Office")
+        dref= FirebaseDatabase.getInstance().getReference("FinalYear")
         dref.addValueEventListener(object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if(snapshot.exists()){

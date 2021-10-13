@@ -23,7 +23,10 @@
         android:layout_height="match_parent"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
         android:layout_gravity="start"
+        android:background="@color/light_grey"
         android:fitsSystemWindows="true"/>
   <!--  <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/btmnav"

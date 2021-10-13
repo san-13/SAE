@@ -13,6 +13,7 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/_99565_black_textured_wallpapers_widescreen_hd_wallpapers_1920x1200_h"/>
+
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

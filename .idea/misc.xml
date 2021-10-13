@@ -4,9 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/bg_gradient.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/facebook.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/ic_baseline_group_24.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_sign_in_btn.xml" value="0.20615384615384616" />
+        <entry key="app/src/main/res/drawable/icons8_instagram.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/linkedin_icon.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/splash_background.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/twitter.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/youtube_icon.xml" value="0.209375" />
         <entry key="app/src/main/res/layout/activity_logedin.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
@@ -14,15 +21,15 @@
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/activity_splash_screens.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/events_btm_sheet.xml" value="0.19322916666666667" />
-        <entry key="app/src/main/res/layout/fragment_about_us.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/fragment_about_us.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_contact_us.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.15720338983050847" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.21482339316734222" />
-        <entry key="app/src/main/res/layout/fragment_team.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_team.xml" value="0.11826585910105196" />
         <entry key="app/src/main/res/layout/h_cryptech_item.xml" value="0.25" />
         <entry key="app/src/main/res/layout/h_events_item.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/h_item.xml" value="0.19322916666666667" />
-        <entry key="app/src/main/res/layout/info_btm_sheet.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/info_btm_sheet.xml" value="0.25" />
         <entry key="app/src/main/res/layout/latest_item.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/nav_header.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/notification.xml" value="0.19322916666666667" />

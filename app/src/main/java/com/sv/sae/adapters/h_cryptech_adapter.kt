@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.ProgressBar
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.request.target.ImageViewTarget
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.squareup.picasso.Picasso
@@ -14,6 +16,7 @@ import com.sv.sae.HomeDirections
 import com.sv.sae.R
 import com.sv.sae.info_btm_sheet
 import com.sv.sae.model.cryptechModel
+import kotlinx.coroutines.flow.callbackFlow
 
 class h_cryptech_adapter(
     val cryptechs: ArrayList<cryptechModel>
@@ -34,11 +37,10 @@ class h_cryptech_adapter(
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         val cryptech = cryptechs[position]
-        Picasso.get().load(cryptech.imageUrl).into(holder.image)
+        Picasso.get().load(cryptech.imageUrl).placeholder(R.drawable.loading_31).into(holder.image)
         holder.image.setOnClickListener{
             val action=HomeDirections.actionHome2ToInfoBtmSheet(name = cryptech.name.toString(),ytlink = cryptech.ytlink.toString())
             holder.itemView.findNavController().navigate(action)
-
         }
     }
 

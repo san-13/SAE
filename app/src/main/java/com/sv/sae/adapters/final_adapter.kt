@@ -29,7 +29,7 @@ class final_adapter ( val finals: ArrayList<teamModel>
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         val final = finals[position]
-        Picasso.get().load(final.imageUrl).into(holder.image)
+        Picasso.get().load(final.imageUrl).placeholder(R.drawable.loading_31).into(holder.image)
         holder.image.setOnClickListener{
             val intent= Intent(Intent.ACTION_VIEW, Uri.parse(final.linkedin))
             holder.image.context.startActivity(intent)

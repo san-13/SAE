@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Home">
+    tools:context=".Home"
+    android:background="@color/dark_grey">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,6 +34,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/t_cryptech"
                     android:text="@string/cryptech"
+                    android:textColor="@color/white"
                     android:textSize="24sp"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="10dp"
@@ -61,6 +63,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/t_events"
                     android:text="@string/events"
+                    android:textColor="@color/white"
                     android:textSize="24sp"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="5dp"
@@ -86,6 +89,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/t_webinar"
                     android:text="@string/webinars"
+                    android:textColor="@color/white"
                     android:textSize="24sp"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="10dp"

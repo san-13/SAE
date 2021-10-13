@@ -6,10 +6,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Login"
     android:background="@color/dark_grey">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
  <!--   <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,11 +41,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/pass"
             app:layout_constraintEnd_toEndOf="parent"/> -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/sae__1_"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/googlebtn"
+            android:layout_marginBottom="40dp"/>
         <androidx.cardview.widget.CardView
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:id="@+id/googlebtn"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -57,11 +69,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign in with Google"
-                android:textColor="@color/white"
+                android:textColor="@color/dark_grey"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="40dp"/>
 
+
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 
 </FrameLayout>

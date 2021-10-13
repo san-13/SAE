@@ -36,7 +36,7 @@ class office_adapter ( val offices: ArrayList<teamModel>
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         val office = offices[position]
-        Picasso.get().load(office.imageUrl).into(holder.image)
+        Picasso.get().load(office.imageUrl).placeholder(R.drawable.loading_31).into(holder.image)
         holder.image.setOnClickListener{
             val intent=Intent(Intent.ACTION_VIEW, Uri.parse(office.linkedin))
             holder.image.context.startActivity(intent)

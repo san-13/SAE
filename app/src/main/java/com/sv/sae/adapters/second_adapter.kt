@@ -29,7 +29,7 @@ class second_adapter ( val seconds: ArrayList<teamModel>
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         val second = seconds[position]
-        Picasso.get().load(second.imageUrl).into(holder.image)
+        Picasso.get().load(second.imageUrl).placeholder(R.drawable.loading_31).into(holder.image)
         holder.image.setOnClickListener{
             val intent= Intent(Intent.ACTION_VIEW, Uri.parse(second.linkedin))
             holder.image.context.startActivity(intent)
